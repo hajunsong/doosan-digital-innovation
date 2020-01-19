@@ -1,9 +1,6 @@
 #ifndef robomap_MAIN_WINDOW_H
 #define robomap_MAIN_WINDOW_H
 
-/*****************************************************************************
-** Includes
-*****************************************************************************/
 #include <QMainWindow>
 #include <QDebug>
 #include <QTime>
@@ -27,20 +24,11 @@ using namespace std;
 
 #define DEBUG 1
 
-/*****************************************************************************
-** Namespace
-*****************************************************************************/
 namespace Ui {
 class MainWindow;
 }
 namespace DDI {
 
-/*****************************************************************************
-** Interface [MainWindow]
-*****************************************************************************/
-/**
- * @brief Qt central, all operations relating to the view part here.
- */
 class MainWindow : public QMainWindow {
     Q_OBJECT
 

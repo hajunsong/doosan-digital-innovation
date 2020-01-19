@@ -1,14 +1,3 @@
-/**
- * @file /src/main_window.cpp
- *
- * @brief Implementation for the qt gui.
- *
- * @date February 2011
- **/
-/*****************************************************************************
-** Includes
-*****************************************************************************/
-
 #include <QtGui>
 #include <QMessageBox>
 #include <iostream>
@@ -16,9 +5,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-/*****************************************************************************
-** Namespaces
-*****************************************************************************/
 namespace DDI
 {
 

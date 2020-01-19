@@ -1,20 +1,5 @@
-/**
- * @file /include/robomap/qnode.hpp
- *
- * @brief Communications central!
- *
- * @date February 2011
- **/
-/*****************************************************************************
-** Ifdefs
-*****************************************************************************/
-
 #ifndef robomap_QNODE_HPP_
 #define robomap_QNODE_HPP_
-
-/*****************************************************************************
-** Includes
-*****************************************************************************/
 
 #ifndef Q_MOC_RUN
 #include <ros/ros.h>
@@ -40,9 +25,6 @@ public:
 	bool init(const std::string &master_url, const std::string &host_url);
 	void run();
 
-	/*********************
-	** Logging
-	**********************/
 	enum LogLevel
 	{
 		Debug,
