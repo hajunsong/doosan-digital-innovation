@@ -1,0 +1,8 @@
+prefix=/home/keti/Project/keti-doosan/install
+
+Name: doosan_digital_innovation
+Description: Description of doosan_digital_innovation
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

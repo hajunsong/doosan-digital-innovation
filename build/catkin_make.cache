@@ -1,0 +1,2 @@
+.
+-DCATKIN_DEVEL_PREFIX=/home/keti/Project/keti-doosan/devel -DCMAKE_INSTALL_PREFIX=/home/keti/Project/keti-doosan/install -G Unix Makefiles
