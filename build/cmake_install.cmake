@@ -124,38 +124,26 @@ file(INSTALL DESTINATION "/home/keti/Project/keti-doosan/install" TYPE FILE FILE
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/keti/Project/keti-doosan/build/catkin_generated/installspace/doosan_digital_innovation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/keti/Project/keti-doosan/build/catkin_generated/installspace/keti_dsr_run.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doosan_digital_innovation/cmake" TYPE FILE FILES
-    "/home/keti/Project/keti-doosan/build/catkin_generated/installspace/doosan_digital_innovationConfig.cmake"
-    "/home/keti/Project/keti-doosan/build/catkin_generated/installspace/doosan_digital_innovationConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keti_dsr_run/cmake" TYPE FILE FILES
+    "/home/keti/Project/keti-doosan/build/catkin_generated/installspace/keti_dsr_runConfig.cmake"
+    "/home/keti/Project/keti-doosan/build/catkin_generated/installspace/keti_dsr_runConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doosan_digital_innovation" TYPE FILE FILES "/home/keti/Project/keti-doosan/src/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keti_dsr_run" TYPE FILE FILES "/home/keti/Project/keti-doosan/src/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/doosan_digital_innovation/doosan_digital_innovation" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/doosan_digital_innovation/doosan_digital_innovation")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/doosan_digital_innovation/doosan_digital_innovation"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/doosan_digital_innovation" TYPE EXECUTABLE FILES "/home/keti/Project/keti-doosan/devel/lib/doosan_digital_innovation/doosan_digital_innovation")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/doosan_digital_innovation/doosan_digital_innovation" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/doosan_digital_innovation/doosan_digital_innovation")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/doosan_digital_innovation/doosan_digital_innovation"
-         OLD_RPATH "/opt/ros/kinetic/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/doosan_digital_innovation/doosan_digital_innovation")
-    endif()
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/keti_dsr_run" TYPE PROGRAM FILES "/home/keti/Project/keti-doosan/src/scripts/keti_doosan.py")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/keti_dsr_run" TYPE PROGRAM FILES "/home/keti/Project/keti-doosan/src/scripts/keti_doosan_keyop.py")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
